@@ -1,0 +1,768 @@
+[
+  {
+    "text": "quiet accessible cafe within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "noise_level": "quiet",
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "cafe within 5 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 400,
+      "filters": {
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "wheelchair-accessible restaurant within 15 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 1200,
+      "filters": {
+        "accessible": true,
+        "category": "restaurant"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet library nearby",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "library"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "pharmacy within 8 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 640,
+      "filters": {
+        "category": "pharmacy"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "park within 12 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 960,
+      "filters": {
+        "category": "park"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "accessible grocery within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "category": "grocery"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet museum within 20 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 1600,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "museum"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "gym within 7 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 560,
+      "filters": {
+        "category": "gym"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "bar within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "bar"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "step-free cafe within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "not loud cafe within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "retail within 6 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 480,
+      "filters": {
+        "category": "retail"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet accessible park within 15 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 1200,
+      "filters": {
+        "accessible": true,
+        "noise_level": "quiet",
+        "category": "park"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "restaurant within 10 minute walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "restaurant"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet accessible cafe within 10 min walk please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "noise_level": "quiet",
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "cafe within 5 minutes please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 400,
+      "filters": {
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "wheelchair-accessible restaurant within 15 min walk please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 1200,
+      "filters": {
+        "accessible": true,
+        "category": "restaurant"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet library nearby please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "library"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "pharmacy within 8 minutes please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 640,
+      "filters": {
+        "category": "pharmacy"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "park within 12 min walk please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 960,
+      "filters": {
+        "category": "park"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "accessible grocery within 10 minutes please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "category": "grocery"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet museum within 20 min walk please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 1600,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "museum"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "gym within 7 minutes please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 560,
+      "filters": {
+        "category": "gym"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "bar within 10 min walk please",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "bar"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "find a cafe within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "accessible pharmacy within 5 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 400,
+      "filters": {
+        "accessible": true,
+        "category": "pharmacy"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet restaurant within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "restaurant"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "museum within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "museum"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "library within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "library"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "grocery within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "grocery"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "wheelchair accessible gym within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "category": "gym"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "peaceful park within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "noise_level": "quiet",
+        "category": "park"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "coffee within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "retail shop within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "retail"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "quiet accessible cafe within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "noise_level": "quiet",
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "bar nearby within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "bar"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "pharmacy nearby",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "pharmacy"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "cafe near me within 10 min walk",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "category": "cafe"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "accessible retail within 10 minutes",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {
+        "accessible": true,
+        "category": "retail"
+      },
+      "sort_by": "distance"
+    },
+    "expect_fail": false
+  },
+  {
+    "text": "something nice",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "find food",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "asdfgh",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "the best place",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "somewhere fun",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "??? ",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "hello",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "show me options",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+  {
+    "text": "not sure where",
+    "origin": {
+      "lon": -122.4194,
+      "lat": 37.7749
+    },
+    "expected": {
+      "radius_m": 800,
+      "filters": {},
+      "sort_by": "distance"
+    },
+    "expect_fail": true
+  },
+    {
+      "text": "pick anything interesting around here somehow",
+      "origin": {
+        "lon": -122.4194,
+        "lat": 37.7749
+      },
+      "expected": {
+        "radius_m": 800,
+        "filters": {},
+        "sort_by": "distance"
+      },
+      "expect_fail": true
+    }
+]
