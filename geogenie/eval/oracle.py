@@ -50,7 +50,7 @@ def oracle_index_range(n_pois: int = 5000, n_queries: int = 50, seed: int = 0) -
     for _ in range(n_queries):
         p = rng.choice(pois)
         radius = rng.uniform(200, 2000)
-        got = {p.id for p in idx.range_query(p.x or 0, p.y or 0, radius)}
+        got = set(idx.range_query(p.x or 0, p.y or 0, radius))
         exp = {p.id for p in brute_force_range(pois, p.x or 0, p.y or 0, radius)}
         assert got == exp, (len(got), len(exp), got.symmetric_difference(exp))
 

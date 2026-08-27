@@ -1,0 +1,203 @@
+{
+  "env": {
+    "python": "3.13.2",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "cpu_count": 8,
+    "timestamp": "2026-08-27T08:46:22.932274+00:00",
+    "git_sha": "fd60653"
+  },
+  "config": {
+    "sizes": [
+      1000,
+      10000,
+      100000
+    ],
+    "compare": [
+      "kdtree",
+      "brute_force",
+      "rtree"
+    ],
+    "queries": 50,
+    "reps": 30,
+    "warmup": 5,
+    "radius_m": 800.0,
+    "seed": 42
+  },
+  "results": [
+    {
+      "n": 1000,
+      "index": "kdtree",
+      "build_ms": {
+        "median": 4.485917,
+        "iqr": [
+          4.435291,
+          4.701
+        ]
+      },
+      "query_us_per_query": {
+        "median": 8.4775,
+        "iqr": [
+          7.81918,
+          9.13918
+        ]
+      },
+      "candidates_examined_frac": 0.007
+    },
+    {
+      "n": 1000,
+      "index": "brute_force",
+      "build_ms": {
+        "median": 2.9275,
+        "iqr": [
+          2.884333,
+          3.016041
+        ]
+      },
+      "query_us_per_query": {
+        "median": 9.48583,
+        "iqr": [
+          9.07832,
+          9.849160000000001
+        ]
+      },
+      "candidates_examined_frac": null
+    },
+    {
+      "n": 1000,
+      "index": "rtree",
+      "build_ms": {
+        "median": 3.287667,
+        "iqr": [
+          3.173333,
+          3.739083
+        ]
+      },
+      "query_us_per_query": {
+        "median": 18.102089999999997,
+        "iqr": [
+          16.75666,
+          22.04
+        ]
+      },
+      "candidates_examined_frac": null
+    },
+    {
+      "n": 10000,
+      "index": "kdtree",
+      "build_ms": {
+        "median": 52.055833,
+        "iqr": [
+          51.620875,
+          52.899333
+        ]
+      },
+      "query_us_per_query": {
+        "median": 34.88083,
+        "iqr": [
+          33.80082,
+          37.09334
+        ]
+      },
+      "candidates_examined_frac": 0.0052
+    },
+    {
+      "n": 10000,
+      "index": "brute_force",
+      "build_ms": {
+        "median": 30.71775,
+        "iqr": [
+          30.15925,
+          31.028958
+        ]
+      },
+      "query_us_per_query": {
+        "median": 64.06876,
+        "iqr": [
+          63.5675,
+          64.89583999999999
+        ]
+      },
+      "candidates_examined_frac": null
+    },
+    {
+      "n": 10000,
+      "index": "rtree",
+      "build_ms": {
+        "median": 34.525792,
+        "iqr": [
+          34.131834,
+          34.855
+        ]
+      },
+      "query_us_per_query": {
+        "median": 44.274589999999996,
+        "iqr": [
+          43.4975,
+          49.205
+        ]
+      },
+      "candidates_examined_frac": null
+    },
+    {
+      "n": 100000,
+      "index": "kdtree",
+      "build_ms": {
+        "median": 891.277792,
+        "iqr": [
+          861.446708,
+          990.292084
+        ]
+      },
+      "query_us_per_query": {
+        "median": 286.54209000000003,
+        "iqr": [
+          282.94334,
+          293.345
+        ]
+      },
+      "candidates_examined_frac": 0.00547
+    },
+    {
+      "n": 100000,
+      "index": "brute_force",
+      "build_ms": {
+        "median": 330.047459,
+        "iqr": [
+          325.368333,
+          504.43375
+        ]
+      },
+      "query_us_per_query": {
+        "median": 617.60625,
+        "iqr": [
+          613.2941599999999,
+          627.21834
+        ]
+      },
+      "candidates_examined_frac": null
+    },
+    {
+      "n": 100000,
+      "index": "rtree",
+      "build_ms": {
+        "median": 545.399084,
+        "iqr": [
+          382.070625,
+          558.805958
+        ]
+      },
+      "query_us_per_query": {
+        "median": 240.13167,
+        "iqr": [
+          234.09416000000002,
+          255.4225
+        ]
+      },
+      "candidates_examined_frac": null
+    }
+  ],
+  "warnings": [
+    "SANITY at n=100000 kdtree: examined 0.55% but speedup 2.2x < 5\u00d7 vs brute \u2014 check harness (hydration leak?) or see bench_stages.py for Amdahl story",
+    "SANITY at n=100000 rtree: examined 0.55% but speedup 2.6x < 5\u00d7 vs brute \u2014 check harness (hydration leak?) or see bench_stages.py for Amdahl story"
+  ]
+}
