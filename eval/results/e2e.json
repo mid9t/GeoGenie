@@ -1,0 +1,33 @@
+{
+  "mode": "in-process",
+  "cold": {
+    "p50_ms": 2.2707085008732975,
+    "p95_ms": 4.148177459137514,
+    "n": 300,
+    "min_ms": 1.8749999580904841,
+    "max_ms": 4.810792044736445
+  },
+  "warm": {
+    "p50_ms": 0.5003954865969718,
+    "p95_ms": 2.491641353117302,
+    "n": 300,
+    "min_ms": 0.3249580040574074,
+    "max_ms": 3.1299999682232738
+  },
+  "workload": {
+    "requests": 300,
+    "origins_pool": 20,
+    "zipf": 1.2,
+    "minutes": 10.0,
+    "n_pois": 10000,
+    "distribution": "zipf over origin pool",
+    "llm_parse_excluded": true
+  },
+  "env": {
+    "python": "3.13.2",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+    "cpu_count": 8,
+    "timestamp": "2026-08-27T08:56:31.590174+00:00",
+    "git_sha": "fd60653"
+  }
+}

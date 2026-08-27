@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 from typing import Any, Dict, List
@@ -74,10 +75,21 @@ def evaluate(path: Path | None = None) -> Dict[str, Any]:
     }
 
 
-def main() -> None:
-    report = evaluate()
-    print(json.dumps({k: v for k, v in report.items() if k != "failures"}, indent=2))
+def main(argv: List[str] | None = None) -> None:
+    p = argparse.ArgumentParser()
+    p.add_argument("--emit-json", type=str, default="")
+    p.add_argument("--labeled", type=str, default="")
+    args = p.parse_args(argv)
+    path = Path(args.labeled) if args.labeled else None
+    report = evaluate(path)
+    summary = {k: v for k, v in report.items() if k != "failures"}
+    print(json.dumps(summary, indent=2))
     print(f"failures: {len(report['failures'])}")
+    if args.emit_json:
+        out = Path(args.emit_json)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(summary, indent=2))
+        print(f"Wrote {out}")
 
 
 if __name__ == "__main__":

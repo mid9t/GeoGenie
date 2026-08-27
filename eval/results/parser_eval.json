@@ -1,0 +1,9 @@
+{
+  "n": 51,
+  "per_field_accuracy": {
+    "radius": 1.0,
+    "filters": 1.0,
+    "sort": 1.0
+  },
+  "full_query_accuracy": 1.0
+}

@@ -1,4 +1,9 @@
-"""Staged latency benchmark: median + IQR, share-based reporting. [VR §4.4]"""
+"""Staged latency benchmark: median + IQR, share-based reporting. [VR §4.4]
+
+Owns PIPELINE STAGE decomposition (index / ring / PIP shares).
+Multi-index size sweeps live in benchmark.py — do not consolidate these
+scripts; they answer different questions.
+"""
 
 from __future__ import annotations
 

@@ -83,7 +83,13 @@ def reachable_pois(
     idx_origin = getattr(index, "origin", None) or origin
     qx, qy = to_xy(origin.lon, origin.lat, idx_origin)
 
-    candidates = index.range_query(qx, qy, radius)
+    candidate_ids = index.range_query(qx, qy, radius)
+    # Hydrate outside any index timing path (store / index side-map).
+    if hasattr(index, "get_pois"):
+        candidates = index.get_pois(candidate_ids)
+    else:
+        by_id = {p.id: p for p in getattr(index, "_pois", [])}
+        candidates = [by_id[i] for i in candidate_ids if i in by_id]
 
     cache = ring_cache or RingCache()
     ring = cache.get_or_build(
